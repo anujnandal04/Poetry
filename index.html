@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Maroon Hour - Luca Vale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop>
+        <source src="spaceship-moewalls-com.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Luca Vale</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="poems.html" class="nav-link">Poems</a></li>
+                <li><a href="literature.html" class="nav-link">Literature</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">The Maroon Hour</h1>
+            <p class="hero-subtitle fade-in-delay">At 2 a.m., I don't sleep. I reflect. I relive. I write my unfinished stories. I create my own delulu.</p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="poems.html" class="btn-primary">Explore Poems</a>
+                <a href="#about" class="btn-secondary">About the Poet</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Featured Poem Section -->
+    <section class="featured-poem">
+        <div class="container">
+            <h2 class="section-title">Featured Poem</h2>
+            <div class="poem-card featured">
+                <div class="poem-content">
+                    <h3 class="poem-title">A Love Letter Across Timelines</h3>
+                    <div class="poem-text">
+                        <p class="stanza">
+                            On this birthday of mine… 22.<br>
+                            No party, no noise.<br>
+                            Just me.<br>
+                            And this room.<br>
+                            And somehow, you.
+                        </p>
+                        <p class="stanza">
+                            Maybe somewhere,<br>
+                            you're still talking to me at 12 a.m.,<br>
+                            telling me it's going to be okay,<br>
+                            while I trace constellations on the ceiling,<br>
+                            pretending they're your freckles.
+                        </p>
+                    </div>
+                    <div class="poem-meta">
+                        <span class="date">January 2025</span>
+                        <span class="theme">Longing & Alternate Realities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poems Collection -->
+    <section id="poems" class="poems-section">
+        <div class="container">
+            <h2 class="section-title">Poetry Collection</h2>
+            <div class="poems-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="love">Love</button>
+                <button class="filter-btn" data-filter="longing">Longing</button>
+                <button class="filter-btn" data-filter="heartbreak">Heartbreak</button>
+                <button class="filter-btn" data-filter="strangers">Memories</button>
+            </div>
+            
+            <div class="poems-grid">
+                <div class="poem-card" data-category="love">
+                    <div class="poem-content">
+                        <h3 class="poem-title">My Maroon Girl</h3>
+                        <p class="poem-excerpt">"Elara" Why do you keep asking how much you matter to me? You're all I have, girl...</p>
+                        <div class="poem-meta">
+                            <span class="date">July 2025</span>
+                            <span class="theme">Love</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poem-card" data-category="longing">
+                    <div class="poem-content">
+                        <h3 class="poem-title">A Love Letter Across Timelines</h3>
+                        <p class="poem-excerpt">On this birthday of mine… 22. No party, no noise. Just me. And this room. And somehow, you...</p>
+                        <div class="poem-meta">
+                            <span class="date">January 2025</span>
+                            <span class="theme">Longing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poem-card" data-category="heartbreak">
+                    <div class="poem-content">
+                        <h3 class="poem-title">No Way Back</h3>
+                        <p class="poem-excerpt">They keep sending men. Colder, meaner, quieter. Each one thinking he'll be the one to finish me...</p>
+                        <div class="poem-meta">
+                            <span class="date">August 2024</span>
+                            <span class="theme">Heartbreak</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poem-card" data-category="strangers">
+                    <div class="poem-content">
+                        <h3 class="poem-title">To the Departed</h3>
+                        <p class="poem-excerpt">Since the day you left this physical form of yours, I wonder what it's like to be one among those trillions...</p>
+                        <div class="poem-meta">
+                            <span class="date">July 2025</span>
+                            <span class="theme">Memories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poem-card" data-category="love">
+                    <div class="poem-content">
+                        <h3 class="poem-title">70 Beats per Minute</h3>
+                        <p class="poem-excerpt">Been quite some time since we talked and I've been meaning to ask how you've been doing lately...</p>
+                        <div class="poem-meta">
+                            <span class="date">December 2024</span>
+                            <span class="theme">Love</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poem-card" data-category="longing">
+                    <div class="poem-content">
+                        <h3 class="poem-title">You Didn't Know, Now You Do</h3>
+                        <p class="poem-excerpt">You ever have someone leave… but somehow still linger? Yeah, that's her...</p>
+                        <div class="poem-meta">
+                            <span class="date">October 2024</span>
+                            <span class="theme">Longing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Literature Section -->
+    <section id="literature" class="thoughts-section">
+        <div class="container">
+            <h2 class="section-title">Literature</h2>
+            <div class="thoughts-grid">
+                <div class="thought-card">
+                    <div class="thought-content">
+                        <h3 class="thought-title">Midair and Breathless</h3>
+                        <p class="thought-text">
+                            She moved like water finding its way through stone—inevitable, graceful, completely unaware of her power. I watched her from across the room, caught between wanting to disappear and wanting to be seen, caught somewhere midair and breathless.
+                        </p>
+                        <div class="thought-meta">
+                            <span class="date">July 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thought-card">
+                    <div class="thought-content">
+                        <h3 class="thought-title">The Night It Went Silent</h3>
+                        <p class="thought-text">
+                            We used to talk until the sun came up, filling silence with stories and dreams. Now I count the seconds between your responses, measuring the distance growing between us in delayed texts and cancelled plans.
+                        </p>
+                        <div class="thought-meta">
+                            <span class="date">July 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thought-card">
+                    <div class="thought-content">
+                        <h3 class="thought-title">One Evening, Quietly</h3>
+                        <p class="thought-text">
+                            At the gallery opening, surrounded by art that tried too hard to be profound, I found her standing in front of a blank canvas, completely absorbed. "Sometimes," she whispered, "empty spaces hold the most meaning."
+                        </p>
+                        <div class="thought-meta">
+                            <span class="date">July 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thought-card">
+                    <div class="thought-content">
+                        <h3 class="thought-title">The Guitarist by the Corner</h3>
+                        <p class="thought-text">
+                            Every Thursday at 7 PM, he sits by the corner with his weathered guitar, playing melodies that sound like home. His music box is always empty, but his soul is full—of stories only music can tell.
+                        </p>
+                        <div class="thought-meta">
+                            <span class="date">July 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About the Poet</h2>
+                    <p class="about-description">
+                        Luca Vale is a boy made of late nights and lost words.. a quiet soul who loves too deeply and leaves too softly. He writes not to be heard, but to remember. To keep the moments that broke him beautiful.
+                    </p>
+                    <p class="about-description">
+                        His stories are stitched with memories, of soft smiles, missed calls, and the girl who felt like home at 2:17 A.M. Even heartbreak, in his hands, feels like a love letter.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">Need to check my drawer</div>
+                            <div class="stat-label">Poems Written</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">X years of overthinking</div>
+                            <div class="stat-label">Years Writing</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Dreams Explored</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Luca Vale - Poet" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Connect in the Quiet Moments</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Share Stories</h3>
+                    <p>Reach out to discuss poetry, share thoughts, or simply connect in the silence.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">✉</span>
+                            <span>officialanujnandal@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">�</span>
+                            <span>Follow my writing journey</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/manbqdpl" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 The Maroon Hour. All rights reserved.</p>
+                    <p>Made with ❤️ and late night words, for Elara!</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#sitemap">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="player-content">
+            <div class="music-player-header">
+                <h4 class="music-player-title">♪ Ambient</h4>
+                <button class="minimize-btn" id="minimizeBtn" title="Minimize">−</button>
+            </div>
+            
+            <div class="video-container">
+                <video class="music-video" id="musicVideo" loop>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="song-info">
+                <div class="current-song" id="currentSong">Loading...</div>
+                <div class="current-artist" id="currentArtist">Luca Vale</div>
+            </div>
+            
+            <div class="music-controls">
+                <button class="control-btn" id="prevBtn" title="Previous">⏮</button>
+                <button class="control-btn play-pause-btn" id="playPauseBtn" title="Play/Pause">▶</button>
+                <button class="control-btn" id="nextBtn" title="Next">⏭</button>
+                <button class="control-btn" id="shuffleBtn" title="Shuffle">🔀</button>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="time-display">
+                    <span id="currentTime">0:00</span>
+                    <span id="totalTime">0:00</span>
+                </div>
+            </div>
+            
+            <div class="volume-container">
+                <span class="volume-icon">🔊</span>
+                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+            </div>
+        </div>
+        <button class="minimize-btn" id="expandBtn" title="Expand" style="display: none;">♪</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

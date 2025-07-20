@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            padding: 20px;
+        }
+        video {
+            width: 400px;
+            height: 200px;
+            border: 1px solid #fff;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+        .info {
+            margin: 10px 0;
+            padding: 10px;
+            background: #222;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Player Debug Test</h1>
+    
+    <div class="info">
+        <h3>Current Track Info:</h3>
+        <p id="trackInfo">Loading...</p>
+        <p id="errorInfo"></p>
+    </div>
+    
+    <video id="testVideo" controls>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div>
+        <button onclick="loadTrack(0)">Load Track 1 (Cigarettes After Sex)</button>
+        <button onclick="loadTrack(1)">Load Track 2 (Señorita)</button>
+        <button onclick="loadTrack(2)">Load Track 3 (Smooth)</button>
+    </div>
+    
+    <div>
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="testPaths()">Test File Paths</button>
+    </div>
+
+    <script>
+        const playlist = [
+            {
+                title: "Crush (Before Sunset)",
+                artist: "Cigarettes After Sex",
+                src: "music/Cigarettes After Sex - Crush (Before Sunset).mp4"
+            },
+            {
+                title: "Señorita",
+                artist: "Shawn Mendes, Camila Cabello",
+                src: "music/Shawn Mendes, Camila Cabello - Señorita.mp4"
+            },
+            {
+                title: "Smooth",
+                artist: "Unknown Artist",
+                src: "music/Smooth.mp4"
+            }
+        ];
+        
+        const video = document.getElementById('testVideo');
+        const trackInfo = document.getElementById('trackInfo');
+        const errorInfo = document.getElementById('errorInfo');
+        let currentTrack = 0;
+        
+        video.addEventListener('loadstart', () => {
+            console.log('Video load started');
+            errorInfo.textContent = 'Loading...';
+        });
+        
+        video.addEventListener('canplay', () => {
+            console.log('Video can play');
+            errorInfo.textContent = 'Ready to play!';
+        });
+        
+        video.addEventListener('error', (e) => {
+            console.error('Video error:', e);
+            errorInfo.textContent = `Error loading video: ${e.target.error?.message || 'Unknown error'}`;
+        });
+        
+        function loadTrack(index) {
+            currentTrack = index;
+            const track = playlist[index];
+            console.log('Loading track:', track);
+            
+            video.src = track.src;
+            trackInfo.textContent = `${track.title} by ${track.artist}`;
+            errorInfo.textContent = `Attempting to load: ${track.src}`;
+        }
+        
+        function playPause() {
+            if (video.paused) {
+                video.play().then(() => {
+                    errorInfo.textContent = 'Playing!';
+                }).catch(e => {
+                    errorInfo.textContent = `Play error: ${e.message}`;
+                });
+            } else {
+                video.pause();
+                errorInfo.textContent = 'Paused';
+            }
+        }
+        
+        function testPaths() {
+            console.log('Testing file paths...');
+            playlist.forEach((track, index) => {
+                console.log(`Track ${index + 1}: ${track.src}`);
+            });
+        }
+        
+        // Load first track on page load
+        window.onload = () => {
+            loadTrack(0);
+        };
+    </script>
+</body>
+</html>

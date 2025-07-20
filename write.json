@@ -1,0 +1,148 @@
+{
+  "poems": [
+    {
+      "id": 1,
+      "title": "Cosmic Whispers",
+      "category": "longing",
+      "date": "2024-12-01",
+      "excerpt": "In the silence between heartbeats, stars whisper ancient secrets...",
+      "content": [
+        "In the silence between heartbeats,",
+        "Stars whisper ancient secrets,",
+        "While moonbeams dance on paper,",
+        "Writing stories in silver ink.",
+        "",
+        "Each word a constellation,",
+        "Each verse a galaxy born,",
+        "In the infinite expanse",
+        "Of imagination's dawn."
+      ],
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Signal in the Void",
+      "category": "longing",
+      "date": "2024-09-15",
+      "excerpt": "I send messages to the cosmos, hoping somewhere you might hear...",
+      "content": [
+        "I send messages to the cosmos,",
+        "Hoping somewhere you might hear,",
+        "These transmissions of regret,",
+        "Folded into static clear."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Stellar Love",
+      "category": "love",
+      "date": "2024-10-20",
+      "excerpt": "Your love burns brighter than a thousand suns, illuminating the darkness...",
+      "content": [
+        "Your love burns brighter than a thousand suns,",
+        "Illuminating the darkness of my soul,",
+        "Like a supernova's final embrace,",
+        "Making broken constellations whole."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Empty Station",
+      "category": "heartbreak",
+      "date": "2024-08-30",
+      "excerpt": "The silence echoes where your laughter used to fill these halls...",
+      "content": [
+        "The silence echoes where your laughter",
+        "Used to fill these empty halls,",
+        "Now only ghosts of memory",
+        "Answer when loneliness calls."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "For Those Who Listen",
+      "category": "strangers",
+      "date": "2024-07-10",
+      "excerpt": "To you, unknown friend floating somewhere in the dark...",
+      "content": [
+        "To you, unknown friend floating",
+        "Somewhere in the dark,",
+        "These words are shooting stars,",
+        "Hoping to leave their mark."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Gravity of You",
+      "category": "love",
+      "date": "2024-06-25",
+      "excerpt": "You were my North Star, my constant in the endless night...",
+      "content": [
+        "You were my North Star,",
+        "My constant in the endless night,",
+        "Now I drift without direction,",
+        "Missing your guiding light."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Last Transmission",
+      "category": "longing",
+      "date": "2024-05-15",
+      "excerpt": "If this message finds you among the stars, know that I remember...",
+      "content": [
+        "If this message finds you",
+        "Among the stars above,",
+        "Know that I remember",
+        "Every moment of our love."
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "all",
+      "label": "All",
+      "count": 7
+    },
+    {
+      "name": "love",
+      "label": "Love",
+      "count": 2
+    },
+    {
+      "name": "longing",
+      "label": "Longing",
+      "count": 3
+    },
+    {
+      "name": "heartbreak",
+      "label": "Heartbreak",
+      "count": 1
+    },
+    {
+      "name": "strangers",
+      "label": "For Strangers",
+      "count": 1
+    }
+  ],
+  "author": {
+    "name": "Luca Vale",
+    "bio": "He writes when the world falls silent. Luca Vale is a boy made of late nights and lost words.. a quiet soul who loves too deeply and leaves too softly. He writes not to be heard, but to remember. To keep the moments that broke him beautiful.",
+    "stats": {
+      "poems_written": 150,
+      "years_writing": 5,
+      "dreams_explored": "∞"
+    },
+    "contact": {
+      "email": "officialanujnandal@gmail.com",
+      "social": "@lucavale"
+    }
+  },
+  "website": {
+    "title": "The Maroon Hour - Luca Vale",
+    "tagline": "Where Luca Vale writes when the world falls silent.",
+    "description": "Where late nights become love letters and heartbreak turns beautiful",
+    "theme": "intimate-poetry",
+    "last_updated": "2025-07-17"
+  }
+}
